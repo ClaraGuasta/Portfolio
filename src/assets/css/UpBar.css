@@ -1,0 +1,20 @@
+.upbar{
+    display: flex;
+    width: 100%;
+    background: #0D0C17;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.upbar-elemento{
+    color: aliceblue;
+    background: transparent;
+    font-size: 25px
+}
+.upbar .fas{
+    color: aliceblue;
+    background: transparent;
+    font-size: 25px;
+    padding-right: 13px;
+}
