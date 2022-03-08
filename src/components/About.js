@@ -1,12 +1,33 @@
 import React from 'react';
-import "../assets/css/About.css"
 
 function About() {
     return( 
-   <div>
-       <h4>Sobre mi:</h4>
-       <p>Hola! Soy Clara Guastavino, comencé con la programación capacitandome como Desarrolladora Web Full-Stack en Digital-House. Durante el progreso realicé un proyecto integrador, basado en un e-commerce, donde aplicamos las herramientas necesarias para maquetar el sitio, realizar el Frontend y finalmente encargarnos del Backend. Además, implementamos diversas metodologías ágiles que nos facilitaron el orden y el progreso del proyecto, como SCRUM.   </p>
-   </div>
+        // <!-- ABOUT -->
+        <section className="about" id="about">
+          <div className="conteinerAbout">
+            <h2 >Sobre Mí</h2>
+            <p>
+              Soy una desarrolladora FullStack con experiencia en realizar un
+              e-commerce desde cero, incluyendo tanto el Frontend como el Backend del
+              mismo. Me gustaría especializarme y desarrollarme profesionalmente en el
+              ámbito de desarrollo FrontEnd.
+            </p>
+            <p>
+              Estoy buscando aprender nuevas tecnologías y continuar aprendiendo
+              aquellas que ya conozco. Disfruto trabajando en grupo utilizando GitHub,
+              herramienta que permite la organización del código grupal.
+            </p>
+          </div>
+          <a
+                  className="botonAbout"
+                  href="img/CV-ClaraGuastavino.pdf"
+                  download="CV-ClaraGuastavino.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="fas fa-file-download"></i> Descargar CV</a>
+          </section>
+    
 	)}
 
 export default About;
