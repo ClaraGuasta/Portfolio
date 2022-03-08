@@ -1,5 +1,5 @@
 import React from 'react';
-import cv from "../assets/img/cv3.jpg"
+import cv from "../assets/img/IMG_8494.jpg"
 
 function Home() {
     return( 
