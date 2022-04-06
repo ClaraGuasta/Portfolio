@@ -14,10 +14,10 @@ function Header() {
       <header>
         <div className="header">
           <a className="headerCG" href="#">CG</a>
-          <button onClick={handleUserClick}>
+          <button className="button-menu-toggle" onClick={handleUserClick}>
           <i className="fas fa-bars menu"></i>
           </button>
-          <ul className="navbar__links">
+          {/* <ul className="navbar__links">
             <li className="navbar__link active" data-ref="home">
               <a href="#home">Home</a>
             </li>
@@ -33,7 +33,7 @@ function Header() {
             <li className="navbar__link" data-ref="contact">
               <a href="#contact">Contacto</a>
             </li>
-          </ul>
+          </ul> */}
             <ul className="linksHeader">
               <li data-ref="home">
                 <a href="#home">Home</a>
@@ -52,7 +52,7 @@ function Header() {
               </li>
               </ul>
         </div>
-        {isDropdownOpen && <DropDown />}
+        {isDropdownOpen && <DropDown handleUserClick={handleUserClick} />}
       </header>
     );
   }

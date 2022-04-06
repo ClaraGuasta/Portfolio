@@ -1,7 +1,11 @@
 import React from "react";
 
-function DropDown(){
+function DropDown(props){
     return(
+        <>
+        <button onClick={props.handleUserClick}>
+        <i className="fas fa-bars menu"></i>
+        </button>
         <ul className="navbar__links">
         <li className="navbar__link active" data-ref="home">
           <a href="#home">Home</a>
@@ -19,6 +23,7 @@ function DropDown(){
           <a href="#contact">Contacto</a>
         </li>
       </ul>
+        </>
     )
 }
 

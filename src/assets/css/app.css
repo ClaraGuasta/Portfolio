@@ -38,10 +38,15 @@
     font-size: 28px;
     margin: 10px;
   }
-  .menu {
+  .button-menu-toggle{
+    background-color: transparent;
+    border: none;
+  }
+  .menu {    
     display: flex;
     align-items: center;
     font-size: 35px;
+    color: white;
   }
   .conteinerLinks {
     background-color: black;
@@ -53,17 +58,13 @@
     flex-direction: column;
     background: rgba(0, 0, 0, 0.97);
     font-size: 30px;
-    margin: 0 -20px;
     z-index: 10;
-    transform: translateX(100%);
-    opacity: 0;
     transition: all 0.8s;
-  }
-  .navbar__links {
     list-style: none;
     display: flex;
     height: 100%;
     align-items: center;
+    margin-top: -8px;
   }
   .navbar__link {
     padding-left: 0px;
