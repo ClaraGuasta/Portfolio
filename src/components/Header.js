@@ -1,13 +1,22 @@
-import React from 'react';
-
+import React, { useState } from 'react';
+import DropDown from './Dropwdown';
 
 function Header() {
+  const [
+    isDropdownOpen,
+    setDropdownOpen
+  ] = useState(false);
+
+  const handleUserClick = () => setDropdownOpen(!isDropdownOpen)
+
     return (
       // <!-- NAVBAR -->
       <header>
         <div className="header">
           <a className="headerCG" href="#">CG</a>
+          <button onClick={handleUserClick}>
           <i className="fas fa-bars menu"></i>
+          </button>
           <ul className="navbar__links">
             <li className="navbar__link active" data-ref="home">
               <a href="#home">Home</a>
@@ -43,6 +52,7 @@ function Header() {
               </li>
               </ul>
         </div>
+        {isDropdownOpen && <DropDown />}
       </header>
     );
   }

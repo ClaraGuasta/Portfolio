@@ -14,7 +14,7 @@ function Portfolio() {
         <div className="portfolio__grid">
           <div className="portfolio__item">
             <picture>
-              <source type="image/jpeg" srcset={sklibros} />
+              <source type="image/jpeg" src={sklibros} />
               <img className="portfolio__img" alt="portfolio item" />
             </picture>
             <div className="portfolio__description">
@@ -45,7 +45,7 @@ function Portfolio() {
           </div>
           <div className="portfolio__item">
             <picture>
-              <source type="image/jpeg" srcset={dashboard} />
+              <source type="image/jpeg" src={dashboard} />
               <img className="portfolio__img" alt="portfolio item" />
             </picture>
             <div className="portfolio__description">
