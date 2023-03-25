@@ -13,15 +13,15 @@ function Experience() {
   }, []);
 
   return( 
-      <section className='m-24 mr-80 gap-2 p-10 bg-[#faf3dd] rounded-lg shadow-ls text-black' id="experience">
-        <h2 className='text-3xl pb-2 mb-10 mr-56 border-b border-[#6d6875]'>Experiencia Profesional</h2>
+      <section className='m-9 lg:m-24 lg:mr-80 gap-2 p-6 lg:p-10 bg-[#faf3dd] rounded-lg shadow-ls text-black' id="experience">
+        <h2 className='text-2xl lg:text-3xl pb-2 mb-6 lg:mb-10 lg:mr-56 border-b border-[#6d6875]'>Experiencia Profesional</h2>
         <div className='flex flex-row gap-3 items-center'>
-          <ComputerDesktopIcon alt='dh-logo' className='w-14 paddin absolute left-[108px] bg-[#CB9CF2] rounded-full py-3 px-3' />
-          <div className='border-l border-black border-dotted p-10'> 
-            <h2 className='text-xl mb-3 font-bold border-b border-black w-[50%]'>Digital House</h2>
-            <p className='pl-4 mb-2'>Mayo 2022 - Actualidad .{monthsPassed} Meses</p>
-            <li>Desarrollo de componentes para página web de la empresa.</li>
-            <li>Consumo de API's.</li>
+          <ComputerDesktopIcon alt='computer icon' className='w-10 lg:w-14 paddin absolute left-[40px] lg:left-[108px] bg-[#CB9CF2] rounded-full p-2 lg:p-3' />
+          <div className='border-l border-black border-dotted p-6 lg:p-10'> 
+            <h2 className='text-xl mb-3 lg:font-bold border-b border-black lg:w-[50%]'>Digital House</h2>
+            <p className='text-sm lg:text-base pl-4 mb-2'>Mayo 2022 - Actualidad .{monthsPassed} Meses</p>
+            <li className='text-sm lg:text-base'>Desarrollo de componentes para página web de la empresa.</li>
+            <li className='text-sm lg:text-base'>Consumo de API's.</li>
           </div>
         </div>
       </section>
@@ -29,5 +29,3 @@ function Experience() {
 	)}
 
 export default Experience;
-// const actualDate = Date.parse(new Date());
-// const beginDate = Date.parse(new Date("May 16, 2022 00:00:00"));

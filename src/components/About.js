@@ -9,10 +9,10 @@ function About() {
     setClick(!isClicked)
   })
   return( 
-    <section className="flex gap-3 justify-center m-24" id="about">
-      <div className="flex flex-col w-1/2 gap-3 text-white">
-        <div className='bg-[#6d6875] w-[109%] h-fit rounded-lg p-10 shadow-ls'>
-          <h2 className='text-3xl border-b border-white pb-2'>Sobre Mi</h2>
+    <section className="flex gap-3 justify-center m-9 lg:m-24 flex-col" id="about">
+      <div className="flex lg:flex-col lg:w-1/2 gap-3 text-white">
+        <div className='bg-[#6d6875] w-[109%] h-fit rounded-lg p-6 lg:p-10 shadow-ls'>
+          <h2 className='text-2xl lg:text-3xl border-b border-white pb-2'>Sobre Mi</h2>
           <p className='font-body p-2'>
           Mi nombre es Clara Guastavino, tengo 20 años y soy Desarrolladora Frontend de Argentina. 
           Busco maneras de 
@@ -20,7 +20,7 @@ function About() {
           lo que me permite trabajar en diferentes proyectos.
           </p>
         </div>
-        <div className='relative'>
+        <div className='hidden lg:flex relative'>
           <img src={michiFoto} className="w-full rounded-xl shadow-ls cursor-pointer" alt='cat rogrammer' onClick={handleClick}/>    
           <p className={classNames("p-6 top-1/2 rounded-lg",{"visible text-black bg-white absolute left-[122px] opacity-100 transition-all duration-600" : isClicked}, {"invisible opacity-0" : !isClicked})}>
             PD: Me gustan mucho los gatitos y leer. 
@@ -28,8 +28,8 @@ function About() {
         </div>
       </div>
 
-      <div className='bg-[#6d6875] w-1/2 h-fit text-white rounded-lg p-10 pt-[83px] shadow-ls'>
-        <p className='font-body p-2 pt-3 border-t border-white'>
+      <div className='bg-[#6d6875] lg:w-1/2 h-fit text-white rounded-lg p-6 lg:p-10 lg:pt-[83px] shadow-ls'>
+        <p className='font-body p-2 lg:pt-3 lg:border-t lg:border-white'>
         Una de mis cualidades más destacadas es mi sociabilidad. Me encanta interactuar con nuevas personas y
         me siento cómoda trabajando en equipo. De hecho, considero que el trabajo en equipo es fundamental para lograr grandes resultados.
         Siempre estoy dispuesta a brindar mi ayuda, y soy una persona comprometida con mi trabajo.

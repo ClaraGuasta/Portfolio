@@ -20,9 +20,9 @@ function Header() {
                 <button onClick={() => window.scrollTo(0, 0)}>Home</button>
                 <button onClick={() => window.scrollTo(0, 600)}>Sobre Mí</button>
                 <button onClick={() => window.scrollTo(0, 1400)}>Experiencia</button >
-                <button onClick={() => window.scrollTo(0, 1600)}>Skills</button>
-                <button onClick={() => window.scrollTo(0, 2000)}>Portfolio</button>
-                <button onClick={() => window.scrollTo(0, 2800)}>Contacto</button >
+                <button onClick={() => window.scrollTo(0, 1900)}>Skills</button>
+                <button onClick={() => window.scrollTo(0, 2800)}>Portfolio</button>
+                <button onClick={() => window.scrollTo(0, 3700)}>Contacto</button >
               </ul>
         </div>
         {isDropdownOpen && <DropDown handleUserClick={handleUserClick} />}
