@@ -5,7 +5,7 @@ function Contact(){
         // <!-- CONTACT -->
         <section className="contact" id="contact">
           <h2>Contacto</h2> 
-          <p>Pueden contactarme en caso de que quieran que trabajemos juntos.</p>
+          <p>Puedes contactarme por cualquiera de estos medios en caso de que quieras que trabajemos juntos.</p>
           <div className="conteinerRedes">
             <div className="divsRedes"><a href="mailto:cmguastavino@hotmail.com?"><i className="far fa-envelope"></i></a><p>Mail</p></div>
             <div className="divsRedes"><a href="https://github.com/ClaraGuasta"><i className="fab fa-github-square"></i></a><p>GitHub</p></div>

@@ -2,6 +2,11 @@
     margin: 0px;
     padding: 0px;
     font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
+  }
+  .appContainer{
+    background-color: #ECE3DE;
+    padding-top: 10px
   }
   /* HEADER */
   .header {
@@ -24,15 +29,15 @@
     text-decoration: none;
     color: aliceblue;
     font-size: 24px;
-    font-family: "League Spartan", sans-serif;
+    font-family: "Open Sans", sans-serif;
   }
   .headerCG::before {
     content: " < ";
-    color: #6583c8;
+    color: #CB9CF2;
   }
   .headerCG::after {
     content: " />";
-    color: #6583c8;
+    color: #CB9CF2;
   }
   .fa-bars {
     font-size: 28px;
@@ -41,6 +46,7 @@
   .button-menu-toggle{
     background-color: transparent;
     border: none;
+    transition: 0.075, 0.82, 0.165, 1;
   }
   .menu {    
     display: flex;
@@ -99,7 +105,7 @@
     padding-top: 10%;
     min-height: 100vh;
     display: flex;
-    padding: 30px;
+    padding: 50px;
     justify-content: center;
     align-items: center;
     background: rgba(0, 0, 0, 0.8);
@@ -117,8 +123,8 @@
     z-index: -1;
   }
   .imagenHome {
-    width: 50%;
-    border-radius: 50%;
+    width: 100%;
+    border-radius: 30%;
   }
   .conteinerHome {
     padding-top: 10%;
@@ -127,52 +133,77 @@
   h3 {
     color: aliceblue;
     font-size: 30px;
-    font-family: "League Spartan", sans-serif;
+    font-family: "Open Sans", sans-serif;
   }
   .home h1 {
-    color: #6583c8;
+    color: #CB9CF2;
     font-size: 35px;
-    font-family: "League Spartan", sans-serif;
+    font-family: "Open Sans", sans-serif;
   }
   
   /* ABOUT */
+.fondoAbout{
+  background-image: url("../img/aboutfoto.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
 .about {
-  padding: 5px;
-  margin: 15px;
+  background-color: #6d6875;
+  border-radius: 4px;
+  box-shadow: 2px 2px 5px black;
+  padding: 30px;
 }
 .about h2 {
-  font-family: "League Spartan", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: bolder;
   font-size: 30px;
+  border-bottom: 2px solid #faf3dd;
+  margin-bottom: 20px;
+  color: #faf3dd;
 }
 .about p {
-  font-family: "League Spartan", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 25px;
   margin: 12px;
   line-height: 33px;
+  color: #faf3dd;
 }
-.conteinerAbout {
+.containerAbout {
   margin-bottom: 27px;
+  margin-top:30px
+}
+.botonAboutContainer{
+  margin-top: 53px;
+  margin-bottom: 20px;
 }
 .botonAbout {
   margin: 10px;
-  background-color: #6583c8;
+  background-color: #faf3dd;
   text-decoration: none;
   padding: 20px;
-  color: aliceblue;
+  color: black;
   border-radius: 5px;
 }
 .botonAbout:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #e5989b;
 }
 
+/* EXPERIENCE */
+.expPhoto{
+  width: 25%;
+  border-radius: 20px;
+}
 /* SKILLS */
 .skills {
   margin: 51px 10px 10px 10px;
   padding: 10px;
 }
 .skills h2 {
-  font-family: "League Spartan", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: bolder;
   font-size: 30px;
 }
@@ -191,7 +222,7 @@
   transition: width 2s, height 2s, transform 2s;
 }
 .conteinerIconsSkills p {
-  font-family: "League Spartan", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 25px;
 }
 .fa-js {
@@ -224,7 +255,7 @@
   transition: 0.6s;
 }
 .section__title {
-  font-family: "League Spartan", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: bolder;
   font-size: 30px;
 }
@@ -298,7 +329,7 @@
 .section__subtitle {
   font-weight: normal;
   color: black;
-  font-family: "League Spartan", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 24px;
   text-align: left;
   margin: 10px;
@@ -350,13 +381,13 @@
   margin: 30px 10px 10px 10px;
 }
 .contact h2 {
-  font-family: "League Spartan", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: bolder;
   font-size: 30px;
   margin: 10px;
 }
 .contact p {
-  font-family: "League Spartan", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 24px;
   padding: 10px;
 }
@@ -385,7 +416,7 @@
   align-items: center;
 }
 .divsRedes p {
-  font-family: "League Spartan", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 21px;
   text-align: center;
 }
@@ -400,11 +431,16 @@
   margin-right: 10px;
 }
 .footer p {
-  font-family: "League Spartan", sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-align: center;
 }
 
 @media (min-width: 768px) {
+   /* HOME */
+  .imagenHome {
+    width: 50%;
+    border-radius: 30%;
+  }
   /* SKILLS*/
   .fa-js {
     font-size: 180px;
@@ -468,21 +504,21 @@
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    width: 36%;
+    width: 50%;
     padding-right: 30px;
   }
-  .linksHeader ul{
-    list-style:none;
-  }
-  .linksHeader li{
-    list-style:none;
-  }
-  .linksHeader a{
+  .linksHeader button{
     padding: 0px 10px 0px 10px;
     text-decoration: none;
     color: white;
-    font-family: "League Spartan", sans-serif;
-    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;  
+    border:none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .linksHeader button:hover{
+    color: #CB9CF2;
   }
   /*HOME*/
   .conteinerHomeTodo {
@@ -495,31 +531,36 @@
     padding: 10px 10px 10px 51px;
   }
   .imagenHome {
-    width: 30%;
-    border-radius: 50%;
+    width: 34%;
+    border-radius: 30%;
   }
   .home h2,
   h3 {
     color: aliceblue;
     font-size: 50px;
-    font-family: "League Spartan", sans-serif;
+    font-family: "Open Sans", sans-serif;
   }
   .home h1 {
-    color: #6583c8;
     font-size: 63px;
     font-weight: bold;
-    font-family: "League Spartan", sans-serif;
+    font-family: "Open Sans", sans-serif;
   }
   /*ABOUT*/
   .about{
-    margin: 108px;
+    margin: 150px;
+    margin-right: 150px;
+  }
+  .cntAbout{
+    z-index: 0;
   }
   .about h2{
     font-size: 47px;
   }
   .about p{
-    font-size: 29px;
-    margin: 10px 10px 39px 10px;
+    font-size: 20px;
+  }
+  .about p .lastPInAbout{
+    margin-bottom: 2rem;
   }
   /*SKILLS*/
   .skills{
@@ -576,7 +617,7 @@
     max-height: 400px;
   }
   .portfolio__description--text{
-    font-family: "League Spartan", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 25px;
   }
   .button{
