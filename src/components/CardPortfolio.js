@@ -1,6 +1,6 @@
 import React from "react";
 
-function CardPortfolio({ imgUrl, title, text, linkWeb, linkRepo }) {
+function CardPortfolio({ imgUrl, title, text, linkWeb, linkRepo, maintenance }) {
   return (
     <>
       <div className="portfolio__item">
@@ -9,10 +9,11 @@ function CardPortfolio({ imgUrl, title, text, linkWeb, linkRepo }) {
           <img className="portfolio__img" alt="portfolio item" />
         </picture>
         <div className="portfolio__description">
-          <h3 className="portfolio__description--title">{title}</h3>
+          <h3 className="portfolio__description--title">{ maintenance ? "Lo siento, esta aplicación se encuentra en mantenimiento" : title}</h3>
           <p className="portfolio__description--text">
-           {text}
+           {maintenance ? "" : text}
           </p>
+          {!maintenance && 
           <div className="buttons__container">
             <a
               className="button"
@@ -30,7 +31,7 @@ function CardPortfolio({ imgUrl, title, text, linkWeb, linkRepo }) {
             >
               <i className="fab fa-github"></i> Repository
             </a>
-          </div>
+          </div>}
         </div>
       </div>
     </>

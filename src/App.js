@@ -6,17 +6,21 @@ import Skills from "./components/Skills"
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Experience from './components/Experience';
 
 function App() {
   return (
-    <div className='app-contenedor' >
+    <div>
      <Header />
      <div>
      <Home />
+     <div  className='appContainer'>
      <About />
+     <Experience/>
      <Skills />
      <Portfolio />
      <Contact />
+     </div>
      </div>
      <Footer />
     </div>
