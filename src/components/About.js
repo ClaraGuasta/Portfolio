@@ -9,7 +9,7 @@ function About() {
     setClick(!isClicked)
   })
   return( 
-    <section className="flex gap-3 justify-center m-9 lg:m-24 flex-col" id="about">
+    <section className="flex lg:flex-row gap-3 justify-center m-9 lg:m-24 flex-col" id="about">
       <div className="flex lg:flex-col lg:w-1/2 gap-3 text-white">
         <div className='bg-[#6d6875] w-[109%] h-fit rounded-lg p-6 lg:p-10 shadow-ls'>
           <h2 className='text-2xl lg:text-3xl border-b border-white pb-2'>Sobre Mi</h2>
