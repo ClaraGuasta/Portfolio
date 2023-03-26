@@ -9,18 +9,6 @@
     padding-top: 10px
   }
   /* HEADER */
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: aliceblue;
-    background-color: black;
-    position: fixed;
-    width: 100%;
-    z-index: 5;
-    transition: background 0.3s ease 0s,
-      opacity 0.6s cubic-bezier(0.5, 0, 0, 1) 0.25s;
-  }
   .linksHeader{
     display: none;
   }
@@ -100,18 +88,6 @@
   }
 
   /* HOME */
-.home {
-    text-align: center;
-    padding-top: 10%;
-    min-height: 100vh;
-    display: flex;
-    padding: 50px;
-    justify-content: center;
-    align-items: center;
-    background: rgba(0, 0, 0, 0.8);
-    position: relative;
-    flex-direction: column;
-  }
   .fondoHome {
     background-image: url("../img/fondo2.jpg");
     background-attachment: fixed;
@@ -129,126 +105,6 @@
   .conteinerHome {
     padding-top: 10%;
   }
-  .home h2,
-  h3 {
-    color: aliceblue;
-    font-size: 30px;
-    font-family: "Open Sans", sans-serif;
-  }
-  .home h1 {
-    color: #CB9CF2;
-    font-size: 35px;
-    font-family: "Open Sans", sans-serif;
-  }
-  
-  /* ABOUT */
-.fondoAbout{
-  background-image: url("../img/aboutfoto.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-}
-.about {
-  background-color: #6d6875;
-  border-radius: 4px;
-  box-shadow: 2px 2px 5px black;
-  padding: 30px;
-}
-.about h2 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: bolder;
-  font-size: 30px;
-  border-bottom: 2px solid #faf3dd;
-  margin-bottom: 20px;
-  color: #faf3dd;
-}
-.about p {
-  font-family: "Open Sans", sans-serif;
-  font-size: 25px;
-  margin: 12px;
-  line-height: 33px;
-  color: #faf3dd;
-}
-.containerAbout {
-  margin-bottom: 27px;
-  margin-top:30px
-}
-.botonAboutContainer{
-  margin-top: 53px;
-  margin-bottom: 20px;
-}
-.botonAbout {
-  margin: 10px;
-  background-color: #faf3dd;
-  text-decoration: none;
-  padding: 20px;
-  color: black;
-  border-radius: 5px;
-}
-.botonAbout:hover {
-  background-color: #e5989b;
-}
-
-/* EXPERIENCE */
-.expPhoto{
-  width: 25%;
-  border-radius: 20px;
-}
-/* SKILLS */
-.skills {
-  margin: 51px 10px 10px 10px;
-  padding: 10px;
-}
-.skills h2 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: bolder;
-  font-size: 30px;
-}
-.conteinerSkills {
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  /* align-items: center; */
-  justify-content: center;
-}
-.conteinerIconsSkills {
-  padding: 25px;
-}
-.conteinerIconsSkills:hover {
-  transform: rotate(-50deg);
-  transition: width 2s, height 2s, transform 2s;
-}
-.conteinerIconsSkills p {
-  font-family: "Open Sans", sans-serif;
-  font-size: 25px;
-}
-.fa-js {
-  font-size: 100px;
-  color: #f0d02b;
-}
-.conteinerIconsSkills .fa-github {
-  font-size: 100px;
-}
-.fa-html5 {
-  font-size: 125px;
-  color: orange;
-}
-.fa-react {
-  font-size: 100px;
-  color: #4389f0;
-}
-.fa-node-js {
-  font-size: 100px;
-  color: #87e82a;
-}
-.fa-css3-alt {
-  font-size: 125px;
-  color: #6394f0;
-}
-
 /* PORTFOLIO */
 .portfolio {
   margin: 18px;
@@ -441,31 +297,6 @@
     width: 50%;
     border-radius: 30%;
   }
-  /* SKILLS*/
-  .fa-js {
-    font-size: 180px;
-    color: #f0d02b;
-  }
-  .conteinerIconsSkills .fa-github {
-    font-size: 180px;
-  }
-  .fa-html5 {
-    font-size: 200px;
-    color: orange;
-  }
-  .fa-react {
-    font-size: 180px;
-    color: #4389f0;
-  }
-  .fa-node-js {
-    font-size: 180px;
-    color: #87e82a;
-  }
-  .fa-css3-alt {
-    font-size: 200px;
-    color: #6394f0;
-  }
-
   /* PORTFOLIO */
   .portfolio__img {
     width: 100%;
@@ -480,21 +311,6 @@
 }
 @media (min-width: 991px) {
   /*HEADER*/
-  .header{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: aliceblue;
-    background-color: black;
-    position: fixed;
-    width: 100%;
-    z-index: 5;
-    transition: background 0.3s ease 0s, opacity 0.6s cubic-bezier(0.5, 0, 0, 1) 0.25s;
-  }
-  .headerCG {
-    font-size: 40px;
-    padding-left: 20px;
-}
   .header .fa-bars{
     display: none;
   }
@@ -503,7 +319,7 @@
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    width: 50%;
+    width: 58%;
     padding-right: 30px;
   }
   .linksHeader button{
@@ -532,71 +348,6 @@
   .imagenHome {
     width: 34%;
     border-radius: 30%;
-  }
-  .home h2,
-  h3 {
-    color: aliceblue;
-    font-size: 50px;
-    font-family: "Open Sans", sans-serif;
-  }
-  .home h1 {
-    font-size: 63px;
-    font-weight: bold;
-    font-family: "Open Sans", sans-serif;
-  }
-  /*ABOUT*/
-  .about{
-    margin: 150px;
-    margin-right: 150px;
-  }
-  .cntAbout{
-    z-index: 0;
-  }
-  .about h2{
-    font-size: 47px;
-  }
-  .about p{
-    font-size: 20px;
-  }
-  .about p .lastPInAbout{
-    margin-bottom: 2rem;
-  }
-  /*SKILLS*/
-  .skills{
-    margin: 108px;
-  }
-  .skills h2{
-    font-size: 46px;
-  }
-  .conteinerIconsSkills{
-    padding: 34px;
-  }
-  .fa-js {
-    font-size: 200px;
-    color: #f0d02b;
-  }
-  .conteinerIconsSkills .fa-github {
-    font-size: 200px;
-  }
-  .fa-html5 {
-    font-size: 225px;
-    color: orange;
-  }
-  .fa-react {
-    font-size: 200px;
-    color: #4389f0;
-  }
-  .fa-node-js {
-    font-size: 200px;
-    color: #87e82a;
-  }
-  .fa-css3-alt {
-    font-size: 225px;
-    color: #6394f0;
-  }
-  .conteinerIconsSkills p{
-    margin-top: 10px;
-    font-size: 30px;
   }
   /*PORTFOLIO*/
   .portfolio {
