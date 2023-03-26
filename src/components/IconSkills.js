@@ -23,10 +23,12 @@ function IconSkills({ title, url, learntInActuality, color }){
                 "transition delay-150 duration-1000")}></div>
                 <div className={classNames(`w-full h-full  rounded-lg absolute top-0 left-0 z-1 hover:shadow-inaf ${color}`, 
                 {"hover:shadow-none": isClicked}, "transition-all duration-500", {"bg-transparent" : !isClicked})}></div>
-                <div className={classNames('z-2 absolute top-15 right-7 md:right-12 lg:top-22 xl:top-1/3 xl:right-10 flex flex-col text-center', { "flex": isClicked}, { "hidden" : !isClicked})}>
-                    <h2 className='text-2xl'>{title}</h2>
-                    <p>{learntInActuality ? `${monthsPassed} meses de` : "1 año de experiencia"}</p>
-                </div> 
+                <div className='relative'>
+                    <div className={classNames('z-2 absolute top-[-111px] lg:top-[-112px] flex flex-col text-center', { "flex": isClicked}, { "hidden" : !isClicked})}>
+                        <h2 className='text-xl'>{title}</h2>
+                        <p>{learntInActuality ? `${monthsPassed} meses de experiencia` : "1 año de experiencia"}</p>
+                    </div> 
+                </div>
             </div>
         </>
     )

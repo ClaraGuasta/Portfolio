@@ -1,6 +1,5 @@
 import React from 'react';
 import cv from "../assets/img/cvPhoto.jpeg"
-import bgImage from "../assets/img/fondo2.jpg"
 
 function Home() {
     return( 
